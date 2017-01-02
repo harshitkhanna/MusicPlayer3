@@ -13,14 +13,14 @@ import java.lang.String;
  * This is generated code. Please do not modify */
 public final class MyDatabaseMyDatabase_Database extends DatabaseDefinition {
   public MyDatabaseMyDatabase_Database(DatabaseHolder holder) {
-    holder.putDatabaseForTable(Playlist.class, this);
     holder.putDatabaseForTable(Song.class, this);
-    models.add(Playlist.class);
-    modelTableNames.put("Playlist", Playlist.class);
-    modelAdapters.put(Playlist.class, new Playlist_Table(holder, this));
+    holder.putDatabaseForTable(Playlist.class, this);
     models.add(Song.class);
     modelTableNames.put("Song", Song.class);
     modelAdapters.put(Song.class, new Song_Table(holder, this));
+    models.add(Playlist.class);
+    modelTableNames.put("Playlist", Playlist.class);
+    modelAdapters.put(Playlist.class, new Playlist_Table(holder, this));
   }
 
   @Override

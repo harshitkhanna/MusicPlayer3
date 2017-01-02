@@ -15,6 +15,7 @@ import android.widget.RemoteViewsService;
 import android.widget.TextView;
 
 import com.example.harshitkhanna.newmusicapp.R;
+import com.example.harshitkhanna.newmusicapp.SongFragment;
 import com.squareup.picasso.Picasso;
 
 import java.io.FileNotFoundException;
@@ -31,11 +32,18 @@ public class SongAdapter extends ArrayAdapter {
 
     Context mcontext;
     ArrayList<Song> msongs;
+    SongFragment.FragmentListener mfragmentListener;
 
     public SongAdapter(Context context, ArrayList<Song> objects) {
         super(context, 0, objects);
         msongs=objects;
         mcontext=context;
+    }
+    public SongAdapter(Context context, ArrayList<Song> objects, SongFragment.FragmentListener fragmentListener) {
+        super(context, 0, objects);
+        msongs=objects;
+        mcontext=context;
+        mfragmentListener=fragmentListener;
     }
 
     public class ViewHolder{
@@ -102,6 +110,8 @@ public class SongAdapter extends ArrayAdapter {
                     vh.isFav.setImageResource(android.R.drawable.star_big_on);
                     song.update();
                 }
+                if(mfragmentListener!=null)
+                    mfragmentListener.resetFav();
             }
         });
         return convertView;

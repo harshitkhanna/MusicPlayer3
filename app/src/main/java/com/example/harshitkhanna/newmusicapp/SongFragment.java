@@ -15,6 +15,7 @@ import android.provider.MediaStore;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -49,11 +50,17 @@ public class SongFragment extends Fragment  {
 
 
     FragmentListener mfragmentListener;
+
+
+
     public interface FragmentListener{
         public PlayMP3 getService();
         public ArrayList<Song> getFav();
         public ArrayList<Song> getAllSong();
         public void updateonSongClick(String a);
+        public void resetRecentlyPlayed();
+        public void resetFav();
+
     }
 
     public void setMfragmentListener(FragmentListener mfragmentListener) {
@@ -72,29 +79,7 @@ public class SongFragment extends Fragment  {
 
     SharedPreferences settings;
 
-    @Override
-    public void onResume() {
-        super.onResume();
 
-        ArrayList<Song> marraylist;
-        if(sec==1) {  //all songs
-            marraylist=mfragmentListener.getAllSong();
-        }
-        else if(sec==2) //recently played
-        {
-            marraylist=populateRecentSongs();
-        }
-        else if(sec==3){     //favourites
-            marraylist=mfragmentListener.getFav();
-        }
-        else{
-            marraylist=new ArrayList<>();
-        }
-        Log.i("onk", "onResume: "+sec);
-        songArrayList.clear();
-        songArrayList.addAll(marraylist);
-        songAdapter.notifyDataSetChanged();
-    }
 
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
@@ -105,12 +90,21 @@ public class SongFragment extends Fragment  {
         ListView lv= (ListView) rootView.findViewById(R.id.fragment_main_song_lv);
         songArrayList=new ArrayList<>();
         settings=getActivity().getSharedPreferences(MusicAppConstants.PREF_NAME,0);
+
         //fetching songs from phone
         Bundle b=getArguments();
         sec=b.getInt("section_number");
-
-
-        songAdapter=new SongAdapter(getActivity(),songArrayList);
+        if(sec==1) {  //all songs
+            songArrayList=mfragmentListener.getAllSong();
+        }
+        else if(sec==2) //recently played
+        {
+            songArrayList=populateRecentSongs();
+        }
+        else if(sec==3){     //favourites
+            songArrayList=mfragmentListener.getFav();
+        }
+        songAdapter=new SongAdapter(getActivity(),songArrayList,mfragmentListener);
         lv.setAdapter(songAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -127,6 +121,7 @@ public class SongFragment extends Fragment  {
                 song.date=date;
                 song.update();
                 mfragmentListener.updateonSongClick(song.title);
+                mfragmentListener.resetRecentlyPlayed();
                 mservice.PlaySong(song.path);
             }
         });
@@ -203,7 +198,7 @@ public class SongFragment extends Fragment  {
         return rootView;
     }
 
-    private ArrayList<Song> populateRecentSongs() {
+    public ArrayList<Song> populateRecentSongs() {
         ArrayList<Song> msong=new ArrayList<>();
         List<Song> songs = SQLite.select().from(Song.class).orderBy(Song_Table.date,false).limit(5).queryList();
         for (Song s : songs) {
@@ -212,5 +207,19 @@ public class SongFragment extends Fragment  {
             msong.add(s);
         }
         return msong;
+    }
+    public void updateRecentlyPlayed(){
+        ArrayList<Song> msongss = populateRecentSongs();
+        songArrayList.clear();
+        songArrayList.addAll(msongss);
+        songAdapter.notifyDataSetChanged();
+    }
+    public void updateFav(){
+        songArrayList = mfragmentListener.getFav();
+        songAdapter.notifyDataSetChanged();
+    }
+    public void updateAllSongs(){
+        songArrayList = mfragmentListener.getAllSong();
+        songAdapter.notifyDataSetChanged();
     }
 }

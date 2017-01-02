@@ -62,10 +62,11 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
 
-    final String PREF_NAME="SharedPref",FIRST_TIME="my_first_time",FRAG_NO="whichFragment",CURR_SONG="current_song",PLAYLIST="playlist";
+    final String PREF_NAME="SharedPref",FIRST_TIME="my_first_time";
     SharedPreferences settings;
     private SectionsPagerAdapter mSectionsPagerAdapter;
     boolean mbound=false;
+    HashMap<Integer,Fragment> hashmap=new HashMap<>();
     PlayMP3 mservice;
     ArrayList<Song> fav=new ArrayList<>(),allSong=new ArrayList<>();
     TextView song_tv;
@@ -131,6 +132,7 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        mViewPager.setOffscreenPageLimit(1);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
@@ -200,6 +202,7 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
                 Log.i("date", "onItemClick: "+date.toString());
                 song.date=date;
                 song.update();
+                resetRecentlyPlayed();
                 mservice.PlaySong(song.path);
             }
         });
@@ -229,6 +232,7 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
                 Log.i("date", "onItemClick: "+date.toString());
                 song.date=date;
                 song.update();
+                resetRecentlyPlayed();
                 mservice.PlaySong(song.path);
             }
         });
@@ -322,6 +326,32 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
         pausePlay.setImageResource(android.R.drawable.ic_media_pause);
     }
 
+    @Override
+    public void resetRecentlyPlayed() {
+        SongFragment RecentlyPlayedFragment=null;
+        if(hashmap.containsKey(1)){
+            RecentlyPlayedFragment= (SongFragment) hashmap.get(1);
+            RecentlyPlayedFragment.updateRecentlyPlayed();
+        }
+    }
+
+    @Override
+    public void resetFav() {
+        SongFragment RecentlyPlayedFragment=null;
+        if(hashmap.containsKey(0)){
+            RecentlyPlayedFragment= (SongFragment) hashmap.get(0);
+            RecentlyPlayedFragment.updateAllSongs();
+        }
+        if(hashmap.containsKey(1)){
+            RecentlyPlayedFragment= (SongFragment) hashmap.get(1);
+            RecentlyPlayedFragment.updateRecentlyPlayed();
+        }
+        if(hashmap.containsKey(2)){
+            RecentlyPlayedFragment= (SongFragment) hashmap.get(2);
+            RecentlyPlayedFragment.updateFav();
+        }
+    }
+
 
     private void populateFavArrayList() {
         fav.clear();
@@ -360,7 +390,7 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-        HashMap<Integer,Fragment> hashmap=new HashMap<>();
+
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
         }
@@ -370,10 +400,9 @@ public class MainActivity extends AppCompatActivity implements SongFragment.Frag
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-//            if(hashmap.containsKey(position)==true){
-//                return hashmap.get(position);
-//            }
-            //if(position<=2)
+            if(hashmap.containsKey(position)==true){
+                return hashmap.get(position);
+            }
             SongFragment fragment=new SongFragment();
             fragment.setMfragmentListener(MainActivity.this);
             Bundle b=new Bundle();
