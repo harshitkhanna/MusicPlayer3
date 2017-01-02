@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.0_7d709fc7c0c1ebd9460218df7f8b8fd95f3b4601.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.0.4/9c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0/kotlin-stdlib-1.0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-1.0.4_bb37e62487de3faeac62941e96773f9847199018.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_6f4d522496eda3f261ec5df2106e609aee345c61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow-kotlinextensions/4.0.0-beta1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ef1986f79bdad2c7bd9c62d83e5768800da126a7">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-kotlinextensions-4.0.0-beta1_21b5228db02b0c070086f8eb4ef908a4a6599aab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7becf15dad3e845f24b2191034be3ca4c6c31249">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta1_326bae0e84213349b31ee44ed103d548a331e88f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_396715c8ec2f13acb0c6abd515b6fc8aa4ec1f3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.0_525b97c474f86952834df926adaf2576c744cd55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta1/ce9d2f83c5f824ef90793e6e5353570a64cce211/dbflow-core-4.0.0-beta1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ce9d2f83c5f824ef90793e6e5353570a64cce211">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.0-beta1_8cee1d18e4e64229ffaa15ac66df033cd33b769c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_c6448cadf29b9312e19e413261fc06ff48585061.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_a3efa086ad3bcd9732c3ef898c52361773c2d7b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-runtime/1.0.4/8e25da5e31669f5acf514bdd99b94ff5c7003b3b/kotlin-runtime-1.0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e25da5e31669f5acf514bdd99b94ff5c7003b3b">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/kotlin-runtime-1.0.4_aba1e651c819da6726b7e240d62e8711896d8077.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_9029b5591e75089b350a61800b9b9b40ee8a9553.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.0_e5d42e9e39da46c3c0a0cab1cb2fda4012dc8071.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_74288125435cdacdbc52967bfb82a65cc83a4592.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.0_1ce06bfeb65a93dc54e36b6d14be25e6334f6620.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.0_21ff8629c911eac116bf400e9c6115d055f4c779.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.0_cd783345e5b8fd9ce071e6aefafb68519473f555.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_c0b17b7f61561cf1b228db69b9ba486173c8ab97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_d2aaad0a84647fc0206bc812f0c8e8a502bc7e90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_8c6a7d03c715913c3b114f8f77cdfc7ef6a20274.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.0_a061a23327ba66b2c40bbcb5528403913a45e4e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.0_bdd38209bd1199b22d9db6152c2ba76021614b25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.0_62e850e5627f950b27836fb55d65a9370c79e311.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_7d0d3d38f65ab952621c853b14191b9f7f59b7d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/harshitkhanna/AndroidStudioProjects/NewMusicApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_720aa65c15e909dee3aecff13ce6bee2ae40bfd5.jar" />
+    </item>
+
+</items>
